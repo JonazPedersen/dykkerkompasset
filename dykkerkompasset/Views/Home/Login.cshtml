@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin Login</title>
+    <link href="~/Content/css/foundation.css" rel="stylesheet" />
+    <link href="~/Content/css/app.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="row">
+        <img class="float-center" src="~/Content/logo/Logo.png" />
+        <h2>Admin Login</h2>
+
+        <form action="/Home/Login/" method="post"> 
+            <br />
+            <input class="adminInput" type="email" name="Email" placeholder="Email" />
+            <br />
+            <input class="adminInput" type="password" name="Adgangskode" placeholder="Adgangskode" />
+            <br />
+            <div class="container">
+                <input id="btn" class="btn" type="submit" value="Log-in" />
+            </div>
+
+            <button type="button" class="cancelbtn">Cancel</button>
+            <a class="glemt" href="#">Glemt adgangskode</a>
+        </form>
+    </div>
+    
+</body>
+</html>
+

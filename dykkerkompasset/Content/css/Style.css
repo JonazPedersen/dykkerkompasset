@@ -1,0 +1,25 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+}
+.row{
+    background-color:#fafafa;
+}
+.overstheader{
+    height:30px;
+    background-color:#0e303b;
+    
+}
+
+header{
+    width:100%;
+    
+}
+#Logo{
+   
+    width:180px;
+}
+
+#logind{
+    font-size:20px;
+    color:white;
+}
