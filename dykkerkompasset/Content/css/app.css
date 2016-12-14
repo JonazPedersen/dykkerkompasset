@@ -26,6 +26,10 @@ form{
     margin-top: 3px;
 }
 
+.glemt:hover{
+    color: #1a5f79;
+}
+
 .adminInput{
     border-radius: 5px;
     padding: 6px;
@@ -54,6 +58,11 @@ form{
     float: right;
 }
 
+.cancelbtn:hover{
+    color: aliceblue;
+    background-color: #cc1f12
+}
+
 .cancelbtn {
     width: 90px;
     height: 30px;
@@ -62,6 +71,7 @@ form{
     color: aliceblue;
     border-radius: 5px;
     font-size: 15px;
+    text-decoration:none;
 }
 
 .container {

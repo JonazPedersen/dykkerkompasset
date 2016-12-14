@@ -25,3 +25,9 @@ header{
 table{
     margin-top: 10px;
 }
+
+.row .row {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
