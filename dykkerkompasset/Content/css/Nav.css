@@ -22,8 +22,8 @@ ul.topnav li a {
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-   background-color:white;
-
+   background-color:#1e6376;
+   color: white;
                       
 }
 ul.topnav li a:active{

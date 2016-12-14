@@ -1,9 +1,7 @@
 ﻿body {
     font-family: 'Raleway', sans-serif;
 }
-.row{
-    background-color:#fafafa;
-}
+
 .overstheader{
     height:30px;
     background-color:#0e303b;
@@ -22,4 +20,8 @@ header{
 #logind{
     font-size:20px;
     color:white;
+}
+
+table{
+    margin-top: 10px;
 }
