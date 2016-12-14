@@ -13,7 +13,7 @@ namespace dykkerkompasset.Controllers
     {
         BrugerFac bf = new BrugerFac();
 
-        public ActionResult Index()
+        public ActionResult KortOverPositioner()
         {
             return View();
         }
