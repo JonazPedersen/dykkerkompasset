@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="35" /></a>
+
+    <h3>
+        Tilføj kategori
+    </h3>
+</div>
+
+<div class="row">
+    <form action="/Admin/AMenu/Add" method="post">
+        <input class="felt" type="text" name="Navn" placeholder="Navn" />
+        <br />
+        <input class="felt" type="text" name="Sortering" placeholder="Sortering" />
+        <br />
+        <input class="btn" type="submit" value="Gem" />
+    </form>
+</div>

@@ -135,6 +135,7 @@
     <Content Include="Content\js\vendor\what-input.js" />
     <Content Include="Content\logo\Logo.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\ikoner\tilbage.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -142,6 +143,8 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\AMenu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AMenu\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\AMenu\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
