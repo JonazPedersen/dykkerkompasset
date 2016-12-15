@@ -4,20 +4,24 @@
 }
 
 <div class="row">
-
-    <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="35" /></a>
-
-    <h3>
-        Tilføj kategori
-    </h3>
+    <div class="small-4 columns">
+        <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="25" /></a>
+    </div>
+    <div class="small-8 columns">
+        <h3>
+            Tilføj kategori
+        </h3>
+    </div>
 </div>
 
 <div class="row">
-    <form action="/Admin/AMenu/Add" method="post">
-        <input class="felt" type="text" name="Navn" placeholder="Navn" />
-        <br />
-        <input class="felt" type="text" name="Sortering" placeholder="Sortering" />
-        <br />
-        <input class="btn" type="submit" value="Gem" />
-    </form>
+    <div class="small-12 columns">
+        <form action="/Admin/AMenu/Add" method="post">
+            <input class="felt" type="text" name="Navn" placeholder="Navn" />
+            <br />
+            <input class="felt" type="text" name="Sortering" placeholder="Sortering" />
+            <br />
+            <input class="btn" type="submit" value="Gem" />
+        </form>
+    </div>
 </div>
