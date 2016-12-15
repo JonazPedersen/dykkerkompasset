@@ -17,6 +17,22 @@ namespace dykkerkompasset.Controllers
         {
             return View();
         }
+        public string fromWGS84toDecimal(string pos)
+        {
+            string newPos = pos.Replace(",", "");
+            string[] arrPos = newPos.Split(':');
+
+            int dec = int.Parse(arrPos[1]) * 60;
+
+            return arrPos[0] + dec;
+        }
+        private string fromDecimalToWGS84(string longOGLat)
+        {
+            string[] arrPos = longOGLat.Split(',');
+            int dec = int.Parse(arrPos[1]);
+
+            return arrPos[0] + "," + (dec * 60);
+        }
 
         public ActionResult Login()
         {
