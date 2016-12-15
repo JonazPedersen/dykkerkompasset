@@ -7,15 +7,14 @@
 
 @foreach (Position pl in Model)
 {
-    
     <div class="row">
-            <table>
-                <tr>
-                    <td class="small-4 .column">@pl.Sted</td>
-                    <td class="small-4 .column">@pl.Long</td>
-                    <td class="small-3 .column">@pl.Lati</td>
-                    <td class="small-1 .column"><a href="/Home/"><img src="~/Content/ikoner/@pl.Videre" width="25" /></a></td>
-                </tr>
-            </table>
+        <table>
+            <tr>
+                <td class="small-4 .column">@pl.Sted</td>
+                <td class="small-4 .column">@pl.Long</td>
+                <td class="small-3 .column">@pl.Lati</td>
+                <td class="small-1 .column"><a href="/Home/showPosition/"><img src="~/Content/ikoner/@pl.Videre" width="25" /></a></td>
+            </tr>
+        </table>
     </div>
 }

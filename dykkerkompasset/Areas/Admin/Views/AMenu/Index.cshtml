@@ -1,0 +1,25 @@
+﻿@using DKrepo
+@model List<Menu>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin</h2>
+
+<div class="opret">
+    <a href="/Admin/AMenu/Add/">Opret ny kategori</a>
+</div>
+<br />
+
+<ul>
+    @foreach (Menu menu in Model)
+    {
+        <li>
+            <div class="aMenu">
+                @menu.Navn <a class="redigerSlet" href="/Admin/AMenu/Edit/@menu.ID/">Rediger</a>
+                <a class="redigerSlet" href="/Admin/AMenu/Delete/@menu.ID/" onclick="javascript:return confirm('Er du sikker på at du vil slette @menu.Navn?');">Slet</a>
+            </div>
+        </li>
+    }
+</ul>
