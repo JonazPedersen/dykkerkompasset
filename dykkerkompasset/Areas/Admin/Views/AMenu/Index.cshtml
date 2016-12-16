@@ -2,27 +2,117 @@
 @model List<Menu>
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dykker Kompasset</title>
+    <link href="~/Content/css/foundation.css" rel="stylesheet" />
+    <link href="~/Content/css/AdminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/Style.css" rel="stylesheet" />
+    <link href="~/Content/css/Nav.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/footer-distributed.css" rel="stylesheet" />
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<div class="fullwidthTop">
+    <div class="row">
+        <!--<div class="hide-for-small-only">-->
+        <div class="overstNav">
+            <div class="TopIndhold" style="float:right">
+                <a id="logind" href="/Home/KortOverPositioner/"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>Log ud</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="NavRedi">
+    <div class="row">
+        <div class="large-12.columns">
+            <img id="Logo" src="~/Content/logo/Logo.png" class="float-center" />
+        </div>
+    </div>
+</div>
+<div class="NavRedi">
+    <div class="row">
+        <div class="large-8 small-centered columns">
+            <ul class="topnav" id="myTopnav">
+                <li><a href="~/Views/Home/KortOverPositioner.cshtml">Kort over positioner </a></li>
+                <li><a href="~/Views/Home/VisPosition.cshtml">Liste over positioner </a></li>
+                <li><a href="#">Vis positioner</a></li>
+                <li><a href="#">Søkort</a></li>
+                <li><a href="#">Fortidsminder</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 <div class="row">
     @*<div class="small-6 columns">*@
-        <div class="opret">
-            <a href="/Admin/AMenu/Add/">Opret ny kategori</a>
-        </div>
+    <div class="opret">
+        <a id="opret" href="/Admin/AMenu/Add/">Opret ny kategori</a>
+    </div>
 
-        <br />
+    <br />
 
-        <ul>
-            @foreach (Menu menu in Model)
+    <ul>
+        @foreach (Menu menu in Model)
             {
-                <li>
-                    <div class="aMenu">
-                        @menu.Navn <a class="redigerSlet" href="/Admin/AMenu/Edit/@menu.ID/">Rediger</a>
-                        <a class="redigerSlet" href="/Admin/AMenu/Delete/@menu.ID/" onclick="javascript:return confirm('Er du sikker på at du vil slette @menu.Navn?');">Slet</a>
-                    </div>
-                </li>
-            }
-        </ul>
+            <li>
+                <div class="aMenu">
+                    @menu.Navn <a class="redigerSlet" href="/Admin/AMenu/Edit/@menu.ID/">Rediger</a>
+                    <a class="redigerSlet" href="/Admin/AMenu/Delete/@menu.ID/" onclick="javascript:return confirm('Er du sikker på at du vil slette @menu.Navn?');">Slet</a>
+                </div>
+            </li>
+        }
+    </ul>
     @*</div>*@
 </div>
+
+<footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <a href="#">Kort over positioner</a>
+            ·
+            <a href="#">Liste over positioner</a>
+            ·
+            <a href="#">Vis positioner</a>
+            ·
+            <a href="#">Søkort</a>
+            ·
+            <a href="#">Fortidsminder</a>
+
+        </p>
+        <p>Dykker Kompasset &copy; 2016</p>
+    </div>
+</footer>
+<script src="~/Content/js/vendor/foundation.js"></script>
+<script src="~/Content/js/vendor/jquery.js"></script>
+<script src="~/Content/js/vendor/what-input.js"></script>
+<script src="~/Content/js/app.js"></script>

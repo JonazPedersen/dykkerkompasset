@@ -39,18 +39,18 @@ namespace dykkerkompasset.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string email, string adgangskode)
+        public ActionResult Login(string Email, string Adgangskode)
         {
 
-            Bruger bruger = bf.Login(email.Trim(), Crypto.Hash(adgangskode.Trim()));
+            Bruger bruger = bf.Login(Email.Trim(), Crypto.Hash(Adgangskode.Trim()));
 
             if (bruger.ID > 0)
             {
                 FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
-                Response.Redirect("/Admin/AMenu/Index/");
+                Response.Redirect("/Admin/AMenu/Index");
             }
 
-            return Redirect("/Home/Login/");
+            return Redirect("/Admin/AMenu/Index/");
         }
 
         public ActionResult Signout()

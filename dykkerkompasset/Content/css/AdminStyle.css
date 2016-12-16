@@ -42,11 +42,8 @@ h4{
   background: #ffffff;
   background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
   background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
-  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
   background-image: -o-linear-gradient(top, #ffffff, #ffffff);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
-  -webkit-border-radius: 39;
-  -moz-border-radius: 39;
   border-radius: 5px;
   font-family: Arial;
   color: #000000;

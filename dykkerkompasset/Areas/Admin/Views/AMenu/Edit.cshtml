@@ -1,29 +1,118 @@
 ﻿@model DKrepo.EditMenu
 @{
     ViewBag.Title = "Edit";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dykker Kompasset</title>
+    <link href="~/Content/css/foundation.css" rel="stylesheet" />
+    <link href="~/Content/css/AdminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/Style.css" rel="stylesheet" />
+    <link href="~/Content/css/Nav.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-<h3>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/footer-distributed.css" rel="stylesheet" />
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="fullwidthTop">
+        <div class="row">
+            <!--<div class="hide-for-small-only">-->
+            <div class="overstNav">
+                <div class="TopIndhold" style="float:right">
+                    <a id="logind" href="/Home/Login/"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>Log ind</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="NavRedi">
+        <div class="row">
+            <div class="large-12.columns">
+                <img id="Logo" src="~/Content/logo/Logo.png" class="float-center" />
+            </div>
+        </div>
+    </div>
+    <div class="NavRedi">
+        <div class="row">
+            <div class="large-8 small-centered columns">
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="#">Kort over positioner </a></li>
+                    <li><a href="#">Liste over positioner </a></li>
+                    <li><a href="#">Vis positioner</a></li>
+                    <li><a href="#">Søkort</a></li>
+                    <li><a href="#">Fortidsminder</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="25" /></a>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                    <form action="/Admin/AMenu/Edit/" method="post">
+                        Navn:<input class="felt" name="Navn" type="text" value="@Model.Menu.Navn" />
+                        <br />
+                        <input class="btn" type="submit" value="Gem" />
+                        <input class="felt" type="hidden" name="ID" value="@Model.Menu.ID" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="#">Kort over positioner</a>
+                ·
+                <a href="#">Liste over positioner</a>
+                ·
+                <a href="#">Vis positioner</a>
+                ·
+                <a href="#">Søkort</a>
+                ·
+                <a href="#">Fortidsminder</a>
+
+            </p>
+            <p>Dykker Kompasset &copy; 2016</p>
+        </div>
+    </footer>
+    <script src="~/Content/js/vendor/foundation.js"></script>
+    <script src="~/Content/js/vendor/jquery.js"></script>
+    <script src="~/Content/js/vendor/what-input.js"></script>
+    <script src="~/Content/js/app.js"></script>
     <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="30" /></a>
-    Rediger Kategori
-</h3>
-
-<div class="row">
-    <h4>Kategori data</h4>
-    <table>
-        <tr>
-            <td>
-                <form action="/Admin/AMenu/Edit/" method="post">
-                    Navn:<input class="felt" name="Navn" type="text" value="@Model.Menu.Navn" />
-                    <br />
-                    <input class="btn" type="submit" value="Gem" />
-                    <input class="felt" type="hidden" name="ID" value="@Model.Menu.ID" />
-                </form>
-            </td>
-        </tr>
-    </table>
-</div>
 
 
 
