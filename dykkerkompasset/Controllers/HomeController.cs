@@ -47,7 +47,7 @@ namespace dykkerkompasset.Controllers
             if (bruger.ID > 0)
             {
                 FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
-                Response.Redirect("/Admin/AKategori/Index");
+                Response.Redirect("/Admin/AMenu/Index/");
             }
 
             return Redirect("/Home/Login/");

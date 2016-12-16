@@ -24,7 +24,6 @@ namespace dykkerkompasset.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize]
         public ActionResult Add()
         {
             return View();

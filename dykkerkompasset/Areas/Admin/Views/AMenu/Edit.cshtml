@@ -1,0 +1,29 @@
+﻿@model DKrepo.EditMenu
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h3>
+    <a href="/Admin/AMenu/Index"><img class="back" src="~/Content/ikoner/tilbage.png" width="30" /></a>
+    Rediger Kategori
+</h3>
+
+<div class="row">
+    <h4>Kategori data</h4>
+    <table>
+        <tr>
+            <td>
+                <form action="/Admin/AMenu/Edit/" method="post">
+                    Navn:<input class="felt" name="Navn" type="text" value="@Model.Menu.Navn" />
+                    <br />
+                    <input class="btn" type="submit" value="Gem" />
+                    <input class="felt" type="hidden" name="ID" value="@Model.Menu.ID" />
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
