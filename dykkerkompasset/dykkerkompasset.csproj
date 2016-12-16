@@ -117,6 +117,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Billeder\Icons\Andet.png" />
+    <Content Include="Content\Billeder\Icons\Fisk.png" />
+    <Content Include="Content\Billeder\Icons\natur.png" />
+    <Content Include="Content\Billeder\Icons\Vrag2.png" />
+    <Content Include="Content\Billeder\Logo\Logo.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\AdminStyle.css" />
