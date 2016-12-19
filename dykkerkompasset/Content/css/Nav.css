@@ -60,7 +60,8 @@ ul.topnav li.icon {display: none;}
 .NavRedi {
     width: 100%;
     background-color: #fafafa;  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+    border-top:solid 1px #d0d0d0;
+    border-bottom:solid 1px #d0d0d0;
 }
 .overstNav {
     height: 30px;
