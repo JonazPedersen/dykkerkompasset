@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
 }
 
 /* Float the list items side by side */
@@ -59,6 +58,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 .NavRedi {
+    
     width: 100%;
     background-color: #fafafa;  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
