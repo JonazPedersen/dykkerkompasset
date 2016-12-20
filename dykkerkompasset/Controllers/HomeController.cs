@@ -60,12 +60,19 @@ namespace dykkerkompasset.Controllers
             return RedirectToAction("Index");
         }
 
-        PositionListFac pf = new PositionListFac();
+        SpotFac pf = new SpotFac();
 
         public ActionResult VisPosition()
         {
 
-            return View(pf.GetAll("ID", "DESC", 8));
+            return View(pf.GetAll("ID", "DESC", 10));
+        }
+
+        SpotFac sf = new SpotFac();
+
+        public ActionResult ShowSpot(int id)
+        {
+            return View(sf.Get(id));
         }
     }
 }

@@ -1,20 +1,19 @@
 ﻿@using DKrepo
-@model List<Position>
+@model List<Spot>
 @{
     ViewBag.Title = "VisPosition";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@foreach (Position pl in Model)
-{
-    
+@foreach (Spot s in Model)
+{    
     <div class="row">
         <table>
             <tr>
-                <td class="large-5 medium-5 small-12.columns">@pl.Sted</td>
-                <td class="large-3 medium-3 small-12.columns">@pl.Long</td>
-                <td class="large-3 medium-3 small-12.columns">@pl.Lati</td>
-                <td class="large-1 medium-1.columns"><a href="/Home/"><img src="~/Content/ikoner/@pl.Videre" width="30" /></a></td>
+                <td class="large-6 medium-6 small-6 .columns">@s.Navn</td>
+                <td class="large-3 medium-3 small-3 .columns">@s.Long</td>
+                <td class="large-2 medium-2 small-2 .columns">@s.Lati</td>
+                <td class="large-1 medium-1 small-1 .columns"><a href="/Home/ShowSpot/@s.ID/"><img src="~/Content/ikoner/videre.png" width="30" /></a></td>
             </tr>
         </table>
     </div>

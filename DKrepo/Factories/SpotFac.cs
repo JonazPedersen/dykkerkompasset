@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DKrepo
 {
-    public class PositionListFac: AutoFac<Position>
+    public class SpotFac:AutoFac<Spot>
     {
-
     }
 }
