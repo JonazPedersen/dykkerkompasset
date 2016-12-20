@@ -46,11 +46,11 @@
     <Compile Include="Factories\AMenuFac.cs" />
     <Compile Include="Factories\BrugerFac.cs" />
     <Compile Include="Factories\MenuFac.cs" />
-    <Compile Include="Factories\PositionListFac.cs" />
+    <Compile Include="Factories\SpotFac.cs" />
     <Compile Include="Models\AMenu.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Bruger.cs" />
-    <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\Spot.cs" />
     <Compile Include="Models\ViewModels\EditMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
