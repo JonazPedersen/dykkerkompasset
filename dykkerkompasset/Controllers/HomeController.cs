@@ -68,11 +68,13 @@ namespace dykkerkompasset.Controllers
             return View(pf.GetAll("ID", "DESC", 10));
         }
 
+        BillederFac imgf = new BillederFac();
         SpotFac sf = new SpotFac();
 
         public ActionResult ShowSpot(int id)
         {
             return View(sf.Get(id));
         }
+
     }
 }

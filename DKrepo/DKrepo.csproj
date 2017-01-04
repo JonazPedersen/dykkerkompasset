@@ -44,6 +44,7 @@
     <Compile Include="DDMF_Light\Conn.cs" />
     <Compile Include="DDMF_Light\Mapper.cs" />
     <Compile Include="Factories\AMenuFac.cs" />
+    <Compile Include="Factories\BillederFac.cs" />
     <Compile Include="Factories\BrugerFac.cs" />
     <Compile Include="Factories\MenuFac.cs" />
     <Compile Include="Factories\SpotFac.cs" />

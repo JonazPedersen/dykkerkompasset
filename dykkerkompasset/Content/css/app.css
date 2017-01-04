@@ -1,5 +1,6 @@
-body{
+body {
     font-family: Raleway;
+    background: url('../Billeder/sea.jpg');
 }
 
 .kryds{
@@ -21,13 +22,13 @@ form{
 }
 
 .glemt{
-    color: #278098;
+    color: #4f4f4f;
     float: right;
     margin-top: 3px;
 }
 
 .glemt:hover{
-    color: #1a5f79;
+    color: #272727;
 }
 
 .adminInput{
@@ -50,7 +51,7 @@ form{
 }
 
 .btn:hover {
-  background: #1a5f79;
+  background: #207290;
   text-decoration: none;
 }
 
@@ -78,3 +79,4 @@ form{
     padding-bottom: 40px;
     margin-bottom: 30px;
 }
+
