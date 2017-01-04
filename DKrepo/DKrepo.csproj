@@ -48,10 +48,12 @@
     <Compile Include="Factories\MenuFac.cs" />
     <Compile Include="Factories\SpotFac.cs" />
     <Compile Include="Models\AMenu.cs" />
+    <Compile Include="Models\Billeder.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Bruger.cs" />
     <Compile Include="Models\Spot.cs" />
     <Compile Include="Models\ViewModels\EditMenu.cs" />
+    <Compile Include="Models\ViewModels\SpotVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
