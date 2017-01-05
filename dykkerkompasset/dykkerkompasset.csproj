@@ -909,8 +909,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Default\" />
-    <Folder Include="Areas\Admin\Views\Menu\" />
     <Folder Include="Content\Billeder\Billeder\Thump\2y28\" />
   </ItemGroup>
   <ItemGroup>
