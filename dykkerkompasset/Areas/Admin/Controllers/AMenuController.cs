@@ -17,7 +17,7 @@ namespace dykkerkompasset.Areas.Admin.Controllers
             return View(mf.GetAll());
         }
 
-        [Authorize]
+        
         public ActionResult Delete(int id)
         {
             mf.Delete(id);
