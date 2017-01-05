@@ -44,13 +44,13 @@ namespace dykkerkompasset.Controllers
 
             Bruger bruger = bf.Login(Email.Trim(), Crypto.Hash(Adgangskode.Trim()));
 
-            if (bruger.ID > 1)
+            if (bruger.ID > 0)
             {
                 FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
                 Response.Redirect("/Admin/AMenu/Index");
             }
 
-            return Redirect("/Admin/AMenu/Index/");
+            return Redirect("/Home/Login/");
         }
 
         public ActionResult Signout()

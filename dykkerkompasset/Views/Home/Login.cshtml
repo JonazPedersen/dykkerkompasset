@@ -3,15 +3,17 @@
 }
 
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Admin Login</title>
+    <title>Login</title>
     <link href="~/Content/css/foundation.css" rel="stylesheet" />
     <link href="~/Content/css/app.css" rel="stylesheet" />
     <meta name="description" content="The description of my page" />
 </head>
 <body>
+    @*@Crypto.Hash("admin");*@
     <div class="row">
         <img class="float-center" src="~/Content/logo/Logo.png" />
         <h2>Login</h2>
@@ -25,7 +27,7 @@
             <div class="container">
                 <input id="btn" class="btn" type="submit" value="Log-in" />
             </div>
-            <a class="cancelbtn" href="/Home/VisPosition/">Annuller</a>
+            <a class="cancelbtn" href="/Home/KortOverPositioner/">Annuller</a>
             <a class="glemt" href="#">Glemt adgangskode ?</a>
         </form>
     </div>

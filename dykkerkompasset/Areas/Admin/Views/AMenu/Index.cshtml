@@ -32,6 +32,7 @@
     </script>
 </head>
 
+
 <div class="fullwidthTop">
     <div class="row">
         <!--<div class="hide-for-small-only">-->
@@ -68,7 +69,6 @@
 
 
 <div class="row">
-    @*<div class="small-6 columns">*@
     <div class="opret">
         <a id="opret" href="/Admin/AMenu/Add/">Opret ny kategori</a>
     </div>
@@ -77,16 +77,15 @@
 
     <ul>
         @foreach (Menu menu in Model)
-            {
-            <li>
-                <div class="aMenu">
-                    @menu.Navn <a class="redigerSlet" href="/Admin/AMenu/Edit/@menu.ID/">Rediger</a>
-                    <a class="redigerSlet" href="/Admin/AMenu/Delete/@menu.ID/" onclick="javascript:return confirm('Er du sikker på at du vil slette @menu.Navn?');">Slet</a>
-                </div>
-            </li>
+        {
+        <li>
+            <div class="aMenu">
+                @menu.Navn <a class="redigerSlet" href="/Admin/AMenu/Edit/@menu.ID/">Rediger</a>
+                <a class="redigerSlet" href="/Admin/AMenu/Delete/" onclick="javascript:return confirm('Er du sikker på at du vil slette @menu.Navn?');">Slet</a>
+            </div>
+        </li>
         }
     </ul>
-    @*</div>*@
 </div>
 
 <footer class="footer-distributed">
