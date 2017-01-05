@@ -831,6 +831,7 @@
     <Content Include="Content\Billeder\Billeder\Øreflak.jpg" />
     <Content Include="Content\Billeder\Icons\Andet.png" />
     <Content Include="Content\Billeder\Icons\Fisk.png" />
+    <Content Include="Content\Billeder\Icons\logokort.png" />
     <Content Include="Content\Billeder\Icons\natur.png" />
     <Content Include="Content\Billeder\Icons\Vrag2.png" />
     <Content Include="Content\Billeder\login.jpg" />
