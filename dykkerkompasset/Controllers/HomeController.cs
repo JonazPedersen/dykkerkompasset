@@ -44,7 +44,7 @@ namespace dykkerkompasset.Controllers
 
             Bruger bruger = bf.Login(Email.Trim(), Crypto.Hash(Adgangskode.Trim()));
 
-            if (bruger.ID > 0)
+            if (bruger.ID > 1)
             {
                 FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
                 Response.Redirect("/Admin/AMenu/Index");
@@ -73,7 +73,11 @@ namespace dykkerkompasset.Controllers
 
         public ActionResult ShowSpot(int id)
         {
-            return View(sf.Get(id));
+            SpotVM SVM = new SpotVM();
+            SVM.spot = sf.Get(id);
+            SVM.billeder = imgf.GetBy("SpotID", id);
+            
+            return View(SVM);
         }
 
     }

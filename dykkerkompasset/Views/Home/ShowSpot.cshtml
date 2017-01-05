@@ -1,5 +1,4 @@
-﻿<html class="no-js" lang="en" dir="ltr">
-@using DKrepo
+﻿@using DKrepo
 @model SpotVM
 @{
     ViewBag.Title = "ShowSpot";
@@ -8,17 +7,16 @@
 
 @foreach (Billeder b in Model.billeder)
 {
-    @b.Filnavn
+    @b.Filnavn;
 }
 
 <div class="row">
     <table>
         <tr>
-            <td class="small-12.columns">@Model.spot.Navn</td>
-            <td class="large-6 medium-6 small-12.columns"><img src="~/Content/Billeder/Billeder/@Model.spot.Billede" /></td>
-            <td class="large-6 medium-6 small-12.columns">@Model.spot.Beskrivelse</td>
+            <td class="small-12 columns"><h2>@Model.spot.Navn</h2></td>
+            <td class="large-6 medium-6 small-12 columns"><img src="~/Content/Billeder/Billeder/@Model.spot.Billede" /></td>
+            <td class="large-6 medium-6 small-12 columns">@Model.spot.Beskrivelse</td>
         </tr>
     </table>
 </div>
-
 
